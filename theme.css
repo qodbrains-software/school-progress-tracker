@@ -199,6 +199,12 @@ color: #ffff;
   }
 
   /* BOTTOM: outter spacer sizes */
+  .margin-bottom-xxsmall {
+    margin-bottom: 0.5rem;
+  }
+  .margin-bottom-xsmall {
+    margin-bottom: 1rem;
+  }
   .margin-bottom-small {
     margin-bottom: 2rem;
   }
@@ -271,6 +277,9 @@ color: #ffff;
   }
 
   /* LEFT: inner spacer sizes */
+  .padding-left-xsmall {
+    padding-left: 1rem;
+  }
   .padding-left-small {
     padding-left: 2rem;
   }
@@ -435,6 +444,10 @@ color: #ffff;
     text-align: center;
   }
 
+.text-start {
+    text-align: start;
+}
+
 .fixed {
   position: fixed;
 }
@@ -459,6 +472,10 @@ color: #ffff;
 
 .a-self {
     align-self: center;
+}
+
+.a-self-start {
+    align-self: flex-start;
 }
 
 /* 
@@ -518,10 +535,15 @@ input {
     */
 
 .form-in-btn {
-    border-radius: 5px;
+    border-radius: 10px;
     height: 40px;
     border: none;
     outline: none;
+
+}
+
+.for{
+    border: 1px solid black;
 
 }
 
