@@ -503,7 +503,7 @@ color: #ffff;
 */
 
 body {
-    background: no-repeat  url(./images/Student\ Sign\ Back\ ground.svg);
+    background: no-repeat center center / cover  url(./images/Student\ Sign\ Back\ ground.svg);
 }
 
 
