@@ -21,6 +21,7 @@ html,
 body {
     line-height: 1.15;
     font-family: averta_stdregular, Helvetica Neue, Helvetica;
+    min-height: 100vh;
 }
 
 img {
@@ -176,6 +177,9 @@ color: #ffff;
   }
 
   /* TOP: outter spacer sizes */
+  .margin-top-xsmall {
+    margin-top: 1rem;
+  }
   .margin-top-small {
     margin-top: 2rem;
   }
@@ -236,7 +240,7 @@ color: #ffff;
 
   /* TOP: inner spacer sizes */
   .padding-small {
-      padding: 0.5rem; 
+      padding: .4rem; 
   }
   .padding-medium {
       padding: 2rem;
@@ -374,6 +378,24 @@ color: #ffff;
   .block{
       display: block;
   }
+
+  .grid-rows-col {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-rows: 30vh 70vh;
+  }
+
+  .grid-rows-col :nth-child(1) {
+    grid-column: 2  / span 3;
+    grid-row: 1;
+  }
+
+  .grid-rows-col :nth-child(2) {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+
   
   .grid-icons {
     display: grid;
@@ -502,7 +524,7 @@ color: #ffff;
 #########################################++++++++++++++++++++++++++++####################################
 */
 
-body {
+.backgrounder {
     background: no-repeat center center / cover  url(./images/Student\ Sign\ Back\ ground.svg);
 }
 
@@ -550,3 +572,92 @@ input {
 .btn-color {
     background-color: var(--secondaryColor);
 }
+
+
+
+/* 
+    #########################################++++++++++++++++++++++++++++####################################
+                                                    *****************
+                                            *********** DASH-TERM*************
+                                                    *****************
+    #########################################++++++++++++++++++++++++++++####################################
+    */
+
+
+.dash-header-bg {
+  background-color: var(--secondaryColor);
+}
+
+.dash-clr {
+  color: var(--paragraphColor);
+}
+
+.dash-bg-clr {
+  background-color: var(--paragraphColor);
+}
+
+.add-clr {
+  color: var(--secondaryColor);
+}
+
+.dash-aside-bg {
+  background-color: var(--primaryColor);
+}
+
+.border-r {
+  border-radius: 5px;
+}
+
+.barker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.border-none {
+  border: none;
+}
+
+form [placeholder] {
+  padding-left: .8rem;
+}
+
+.header-height {
+  height: 30vh;
+}
+
+.grade:hover,
+.grade:active,
+.grade:focus {
+  background-color: rgba(14, 51, 234, 0.747);
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 50%);
+}
+
+.main-grid :nth-child(1) {
+  grid-column: 1;
+}
+.main-grid :nth-child(2) {
+  grid-column: 2;
+}
+.main-grid :nth-child(3) {
+  grid-column: 3;
+}
+.main-grid :nth-child(4) {
+  grid-column: 4;
+}
+.main-grid :nth-child(5) {
+  grid-column: 5;
+}
+
+
+
+
+.grey-bg-clr {
+  background-color: #DDDD;
+}
+
