@@ -309,6 +309,10 @@ color: #ffff;
   .width90 {
     width: 90%;
   }
+
+  .width85 {
+    width: 85%;
+  }
   
   .width77 {
     width: 77%;
@@ -316,6 +320,11 @@ color: #ffff;
   
   .width74 {
     width: 74%;
+  }
+
+
+  .width15 {
+    width: 15%;
   }
 
   /* 
@@ -661,3 +670,38 @@ form [placeholder] {
   background-color: #DDDD;
 }
 
+/* 
+    #########################################++++++++++++++++++++++++++++####################################
+                                                    *****************
+                                            *********** DASH-ATTENDANCE*************
+                                                    *****************
+    #########################################++++++++++++++++++++++++++++####################################
+    */
+
+.scroll {
+  overflow-y: scroll;
+}
+
+tr, td, th {
+  border: solid black 1px;
+}
+
+td, th {
+  width: 33%;
+}
+
+.border {
+  border: solid black;
+}
+
+.height100v {
+  height: 100vh;
+}
+
+.height100p {
+  min-height: 100%;
+}
+
+.main {
+  height: 100%;
+}
