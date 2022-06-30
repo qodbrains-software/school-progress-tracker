@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="theme.css" />
     <title>Document</title>
   </head>
@@ -11,13 +12,13 @@
     <div class="flex height100v">
       <aside class="width15 flex flex-col a-center dash-aside-bg dash-clr">
         <div class="margin-top-medium text-center margin-bottom-xxsmall">
-          <img src="./images/logo.svg" alt="" class="logo" />
+          <img src="./images/logo.svg" alt="" class="logo cursor1"/>
           <h3 class="padding-top-small">My Classes</h3>
         </div>
-        <div class="padding-top-medium">
-          <h4 class="padding-bottom-small">Grade 10 A</h4>
-          <h4 class="padding-bottom-small">Grade 9 B</h4>
-          <h4>Grade 8 C</h4>
+        <div class="width100 height100p flex flex-col a-center padding-top-small">
+          <h4 class="grades width100 padding-top-small padding-bottom-small text-center cursor1"><i class="ri-edit-line padding-right-small"></i>Grade 10 A</h4>
+          <h4 class="grades width100 padding-top-small padding-bottom-small text-center cursor1"><i class="ri-edit-line padding-right-small"></i>Grade 09 B</h4>
+          <h4 class="grades width100 padding-top-small padding-bottom-small text-center cursor1"><i class="ri-edit-line padding-right-small"></i>Grade 08 C</h4>
         </div>
       </aside>
       <section class="width85 flex flex-col">
@@ -36,7 +37,7 @@
           </div>
           <div class="flex js-between padding-top-small">
             <h3>Attendance Section</h3>
-            <h3>20 April 2022</h3>
+            <h3 class="date">20 April 2022</h3>
           </div>
           <div class="flex js-between padding-top-small">
             <button class="btn cursor1">Task</button>
@@ -124,5 +125,6 @@
         </footer>
       </section>
     </div>
+    <script src="attendance.js"></script>
   </body>
 </html>
