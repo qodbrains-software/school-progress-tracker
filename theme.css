@@ -220,6 +220,10 @@ color: #ffff;
   }
 
   /* LEFT: outter spacer sizes */
+  .margin-left-xsmall {
+    margin-left: .5rem;
+  }
+
   .margin-left-small {
     margin-left: 2rem;
   }
@@ -259,9 +263,11 @@ color: #ffff;
   }
 
   /* RIGHT: inner spacer sizes */
+
   .padding-right-small {
-    padding-right: 1rem;
+    padding-right: 1.1rem;
   }
+
   .padding-right-medium {
     padding-right: 2rem;
   }
@@ -309,6 +315,10 @@ color: #ffff;
   .width90 {
     width: 90%;
   }
+
+  .width85 {
+    width: 85%;
+  }
   
   .width77 {
     width: 77%;
@@ -316,6 +326,11 @@ color: #ffff;
   
   .width74 {
     width: 74%;
+  }
+
+
+  .width15 {
+    width: 15%;
   }
 
   /* 
@@ -661,3 +676,47 @@ form [placeholder] {
   background-color: #DDDD;
 }
 
+/* 
+    #########################################++++++++++++++++++++++++++++####################################
+                                                    *****************
+                                            *********** DASH-ATTENDANCE*************
+                                                    *****************
+    #########################################++++++++++++++++++++++++++++####################################
+    */
+
+.scroll {
+  overflow-y: scroll;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(192, 192, 192);
+}
+
+tr {
+  height: 30px;
+}
+
+td, th {
+  width: 33%;
+}
+
+.height100v {
+  height: 100vh;
+}
+
+.height100p {
+  height: 100%;
+}
+
+.btn {
+  padding: .2rem 2rem;
+  border: none;
+  border-radius: 3.5px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  padding-left: 5px;
+}
