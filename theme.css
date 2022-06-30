@@ -342,7 +342,7 @@ color: #ffff;
 */
 
 .logo {
-    height: 80px;
+    height: 60px;
     width: auto;
 }
 
@@ -719,4 +719,12 @@ td, th {
   outline: none;
   border-radius: 2px;
   padding-left: 5px;
+}
+
+.grades {
+  transition: all .5s;
+}
+
+.grades:hover {
+  background-color: #0E31EA;  
 }
