@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+    <title>Student-score</title>
+</head>
+<body>
+    <div class="flex height100v">
+        <aside class="width15 flex flex-col a-center dash-aside-bg dash-clr padding-left-xsmall padding-top-small">
+            <div class="a-self-start para-size3"><i title="Go back" class="ri-arrow-left-line"></i></div>
+          <div class="margin-top-medium text-center margin-bottom-xxsmall">
+            <img src="./images/logo.svg" alt="" class="logo" />
+            <h3 class="padding-top-small">My Classes</h3>
+          </div>
+          <div class="width100 height100p flex flex-col a-center padding-top-small">
+            <h4 class="grades width100 padding-top-small padding-bottom-small text-center cursor1"><i class="ri-edit-line padding-right-small"></i>Grade 10 A</h4>
+            <h4 class="grades width100 padding-top-small padding-bottom-small text-center cursor1"><i class="ri-edit-line padding-right-small"></i>Grade 09 B</h4>
+            <h4 class="grades width100 padding-top-small padding-bottom-small text-center cursor1"><i class="ri-edit-line padding-right-small"></i>Grade 08 C</h4>
+          </div>
+        </aside>
+        <section class="width85 flex flex-col">
+          <header
+            class="dash-header-bg padding-bottom-small padding-right-small padding-left-xsmall dash-clr"
+          >
+            <div class="flex js-between padding-top-small">
+              <h1>SOUTH SECONDARY SCHOOL</h1>
+              <div class="flex a-center padding-right-small">
+                <p class="padding-right-small">Ms Leila Barker</p>
+                <img class="barker" src="./images/barker.jpg" alt="" />
+              </div>
+            </div>
+            <div class="padding-top-small">
+              <h2>Grade 10 A</h2>
+            </div>
+            <div class="flex js-between padding-top-small">
+              <h3>Project 1</h3>
+              <h3>20 April 2022</h3>
+            </div>
+            <div class="flex js-between padding-top-small">
+                    <select class="btn" name="Subjects" id="subject">
+                        <option value="Select-subject" selected>Select-subject</option>
+                        <option value="English">English</option>
+                        <option value="English">Afrikaans</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Physical Sciences">Physical Sciences</option>
+                        <option value="Accounting">Accounting</option>
+                        <option value="Life Orientation">Life Orientation</option>
+                        <option value="Life Sciences">Life Sciences</option>
+                    </select>
+              <div class="flex">
+                <input type="search" class="input" placeholder="Search Student"/>
+                <button class="margin-left-xsmall btn cursor1">Search</button>
+              </div>
+            </div>
+          </header>
+          <table class="width100 padding-right-small add-clr">
+            <tr>
+              <th class="text-start">Student Name</th>
+              <th>Student Score</th>
+              <th>Total Score</th>
+            </tr>
+          </table>
+          <main class="flex flex-col scroll add-clr height100p">
+            <table class="width100">
+              <tr>
+                <td>Dubeni Sonwabile</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Koje Joshua</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Mbuli Vusumzi</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Mpenyana Nick</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Jobe Given</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Manda Dan</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Mpenyana Vincent</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Brown Micheal</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Smith Williams</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Govender Abdul</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+              <tr>
+                <td>Constable Bruce</td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+                <td class="text-center"><p contenteditable="true">0%</p></td>
+              </tr>
+            </table>
+          </main>
+          <footer
+            class="flex j-end a-center padding-top-small padding-bottom-large padding-right-medium dash-aside-bg">
+            <button class="btn cursor1">Submit</button>
+          </footer>
+        </section>
+      </div>
+    
+</body>
+</html>
