@@ -390,6 +390,10 @@ color: #ffff;
     flex-direction: column;
   }
 
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .block{
       display: block;
   }
@@ -676,6 +680,10 @@ form [placeholder] {
   background-color: #DDDD;
 }
 
+.icon-clr {
+  color: red;
+}
+
 /* 
     #########################################++++++++++++++++++++++++++++####################################
                                                     *****************
@@ -698,6 +706,11 @@ tr {
 
 td, th {
   width: 33%;
+}
+
+.table-header th,
+.table-data td {
+  width: 10%;
 }
 
 .height100v {
