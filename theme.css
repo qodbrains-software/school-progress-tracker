@@ -400,6 +400,10 @@ color: #ffff;
     flex-direction: column;
   }
 
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .block{
       display: block;
   }

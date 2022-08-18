@@ -9,32 +9,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="flex height100v">
-      <aside class="width15 flex flex-col a-center dash-aside-bg dash-clr">
-        <div class="margin-top-medium text-center margin-bottom-xxsmall">
-          <img src="./images/logo.svg" alt="" class="logo cursor1" />
-          <h3 class="padding-top-small">My Classes</h3>
-        </div>
-        <div
-          class="width100 height100p flex flex-col a-center padding-top-small"
-        >
-          <h4
-            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
-          >
-            <i class="ri-edit-line padding-right-small"></i>Terms
-          </h4>
-          <h4
-            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
-          >
-            <i class="ri-edit-line padding-right-small"></i>Attendance
-          </h4>
-          <h4
-            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
-          >
-            <i class="ri-edit-line padding-right-small"></i>Comments
-          </h4>
-        </div>
-      </aside>
+    <div class="flex flex-row-reverse height100v">
       <section class="width85 flex flex-col">
         <header
           class="dash-header-bg padding-bottom-small padding-right-small padding-left-xsmall dash-clr"
@@ -164,13 +139,32 @@
             <canvas class="average" height="135"></canvas>
           </div>
         </div>
+        
         </main>
-        <footer
-          class="flex j-end a-center padding-top-small padding-bottom-large padding-right-medium dash-aside-bg"
-        >
-          <button class="btn cursor1">Submit</button>
-        </footer>
+        <div class="flex j-center padding-top-small padding-bottom-large padding-left-medium">
+            <p>Days Absent : <span>4</span></p>
+        </div>
       </section>
+      <aside class="width15 flex flex-col a-center dash-aside-bg dash-clr">
+        <div class="margin-top-medium text-center margin-bottom-small">
+          <img src="./images/logo.svg" alt="" class="logo cursor1" />
+          <h3 class="padding-top-small">My Classes</h3>
+        </div>
+        <div
+          class="width100 height100p flex flex-col a-center padding-top-small"
+        >
+          <h4
+            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
+          >
+            <i class="ri-edit-line padding-right-small"></i>Terms
+          </h4>
+          <h4
+            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
+          >
+            <i class="ri-edit-line padding-right-small"></i>Comments
+          </h4>
+        </div>
+      </aside>
     </div>
     <script src="student-pro.js"></script>
   </body>
