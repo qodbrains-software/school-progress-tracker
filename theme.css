@@ -697,6 +697,10 @@ form [placeholder] {
   background-color: #DDDD;
 }
 
+.icon-clr {
+  color: red;
+}
+
 /* 
     #########################################++++++++++++++++++++++++++++####################################
                                                     *****************
@@ -721,8 +725,9 @@ tr {
   width: 33%;
 }
 
-.subj {
-  width: 26%;
+.table-header th,
+.table-data td {
+  width: 10%;
 }
 
 .height100v {
