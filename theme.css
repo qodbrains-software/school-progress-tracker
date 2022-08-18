@@ -276,6 +276,9 @@ color: #ffff;
   }
 
   /* BOTTOM: inner spacer sizes */
+  .padding-bottom-xsmall {
+    padding-bottom: .5rem;
+  }
   .padding-bottom-small {
     padding-bottom: 1rem;
   }
@@ -307,6 +310,9 @@ color: #ffff;
                                                 *****************
 #########################################++++++++++++++++++++++++++++####################################
 */
+.min-width {
+  min-width: 100%;
+}
 
 .width100 {
     width: 100%;
@@ -385,9 +391,17 @@ color: #ffff;
   .a-start {
     align-items: flex-start;
   }
+
+  .a-end {
+    align-items: flex-end;
+  }
   
   .flex-col {
     flex-direction: column;
+  }
+
+  .flex-row-reverse {
+    flex-direction: row-reverse;
   }
 
   .block{
@@ -630,6 +644,13 @@ input {
   object-fit: cover;
 }
 
+.student-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .border-none {
   border: none;
 }
@@ -696,8 +717,12 @@ tr {
   height: 30px;
 }
 
-td, th {
+.tr-td tr td {
   width: 33%;
+}
+
+.subj {
+  width: 26%;
 }
 
 .height100v {
@@ -728,3 +753,43 @@ td, th {
 .grades:hover {
   background-color: #0E31EA;  
 }
+
+
+.border {
+  border: black solid 2px;
+}
+
+/* 
+    #########################################++++++++++++++++++++++++++++####################################
+                                                    *****************
+                                            *********** DASH-STUDENT*************
+                                                    *****************
+    #########################################++++++++++++++++++++++++++++####################################
+    */
+
+.status .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.dot1 {
+  background-color: red;
+}
+
+.dot2 {
+  background-color: yellow;
+}
+
+.dot3 {
+  background-color: rgb(17, 192, 17);
+}
+
+.canvas {
+  width: 80%;
+}
+
+.canvas {
+  margin: auto;
+}
+
