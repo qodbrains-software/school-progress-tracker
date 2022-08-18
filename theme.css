@@ -644,13 +644,6 @@ input {
   object-fit: cover;
 }
 
-.student-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 .border-none {
   border: none;
 }
@@ -689,14 +682,9 @@ form [placeholder] {
 .main-grid :nth-child(5) {
   grid-column: 5;
 }
-
-
-
-
 .grey-bg-clr {
   background-color: #DDDD;
 }
-
 .icon-clr {
   color: red;
 }
@@ -778,6 +766,13 @@ tr {
   border-radius: 50%;
 }
 
+.student-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .dot1 {
   background-color: red;
 }
@@ -790,11 +785,55 @@ tr {
   background-color: rgb(17, 192, 17);
 }
 
-.canvas {
-  width: 80%;
+.bar {
+  width: 40rem;
 }
 
-.canvas {
-  margin: auto;
+.subject {
+  width: 26%;
 }
 
+.performance {
+  display: none;
+}
+
+/* 
+    #########################################++++++++++++++++++++++++++++####################################
+                                                    *****************
+                                            *********** DASH-COMMENTS*************
+                                                    *****************
+    #########################################++++++++++++++++++++++++++++####################################
+    */
+
+    .comments-image {
+      width: 40px;
+      height:40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .message {
+      position: relative;
+      background-color: #f3f3f3;
+      border-radius: 5px;
+      width: 30rem;
+    }
+
+    .circle {
+      position: absolute;
+      top: 15px;
+      left: -9px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: solid #f3f3f3 1px;
+      background-color: white;
+    }
+
+    .header-t {
+      display: none;
+    }
+
+    .pro {
+      width: 12rem;
+    }
