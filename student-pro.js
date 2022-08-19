@@ -23,21 +23,23 @@ const barChart = new Chart(bargraph, bar)
     #########################################++++++++++++++++++++++++++++####################################
     */
 
-const performance = document.querySelector(".performance")
-const comments = document.querySelector(".comments-page")
+const performance = document.querySelector(".performance");
+const comments = document.querySelector(".comments-page");
+const headert = document.querySelector(".header-t");
 
 
-    const page = (change) => {
-        let nextpage;
-        switch(change) {
-            case performance:
-                change = performance.style.display = "flex"
-                change = comments.style.display = "none"
+    const page = (page) => {
+        switch(page) {
+            case 1:
+                performance.style.display = "block"
+                comments.style.display = "none"
+                headert.style.visibility = "visible"
+                
                 break;
-            case comments:
-                change = comments.style.display = ""
+            case 2:
+                 comments.style.display = "flex"
+                 performance.style.display = "none"
+                 headert.style.visibility = "hidden"
                 break;
         }
-    }
-
-    performance.addEventListener("click", page)
+    };

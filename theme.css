@@ -793,10 +793,6 @@ tr {
   width: 26%;
 }
 
-.performance {
-  display: none;
-}
-
 /* 
     #########################################++++++++++++++++++++++++++++####################################
                                                     *****************
@@ -816,7 +812,7 @@ tr {
       position: relative;
       background-color: #f3f3f3;
       border-radius: 5px;
-      width: 30rem;
+      width: 60%;
     }
 
     .circle {
@@ -830,10 +826,10 @@ tr {
       background-color: white;
     }
 
-    .header-t {
-      display: none;
-    }
-
     .pro {
       width: 12rem;
+    }
+
+    .comments-page {
+      display: none;
     }

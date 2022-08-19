@@ -32,10 +32,10 @@
                 class="student-image cursor1 margin-right-small"
               />
               <div>
-                <p class="padding-bottom-xsmall">Name: Justin Terry</p>
-                <p class="padding-bottom-xsmall">Gender: male</p>
-                <p class="padding-bottom-xsmall">Age: 20</p>
-                <p>Class teacher: leila Barker</p>
+                <p class="padding-bottom-xsmall">Justin Terry</p>
+                <p class="padding-bottom-xsmall">male</p>
+                <p class="padding-bottom-xsmall">20 yrs</p>
+                <p>leila Barker</p>
               </div>
             </div>
             <div class="flex flex-col a-end j-end">
@@ -47,7 +47,7 @@
           </div>
         </header>
         <table class="header-t width100 padding-right-small add-clr">
-          <tr class="width100">
+          <tr class="width100 ">
             <th class="text-start">Subjects</th>
             <th>Task 1</th>
             <th class="">Task 2</th>
@@ -55,9 +55,9 @@
             <th class="">Task 4</th>
           </tr>
         </table>
-        <main class="flex flex-col scroll add-clr height100p">
+        <main class="main-page flex flex-col scroll add-clr height100p">
           <div class="flex height100p">
-            <div class="performance border min-width">
+            <div class="performance min-width">
           <table class="table-student width100">
             <tr class="">
               <td class="subject">English</td>
@@ -142,9 +142,9 @@
           </div>
         </div>
         </div>
-        <div class="comments-page flex flex-col a-center min-width">
+        <div class="comments-page flex flex-col min-width">
         <div class="comments flex a-star padding-top-medium">
-          <div class="pro flex padding-left-xsmall">
+          <div class="pro flex js-between padding-left-xsmall ">
               <div class="profile-teacher margin-right-small">
                 <h4 class="">Tyler Pillay</h4>
                 <p>English</p>
@@ -152,7 +152,8 @@
                 <img class="comments-image" src="./images/barker.jpg" alt="">
             </div> 
             <div class="message margin-left-small padding-small padding-left-xsmall">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus?</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam possimus sapiente iusto repellendus cumque natus. Perspiciatis maiores repellat numquam dignissimos doloremque 
+                excepturi voluptates asperiores quam quas possimus, cumque inventore!</p>
               <p class="circle"></p>
               <div class="flex js-between padding-top-small">
               <small>09:34</small>
@@ -160,10 +161,10 @@
             </div>
             </div>         
         </div>
-        <div class="comments flex a-start min-width padding-top-medium">
-          <div class="pro flex padding-left-xsmall">
+        <div class="comments flex a-start padding-top-medium">
+          <div class="pro flex js-between padding-left-xsmall">
               <div class="profile-teacher margin-right-small">
-                <h4>Anelisa Carter</h4>
+                <h4>Anelisa Carter dubeni</h4>
                 <p>Physical</p>
               </div>
                 <img class="comments-image" src="./images/barker.jpg" alt="">
@@ -178,7 +179,7 @@
             </div>         
         </div>
         <div class="comments flex a-start padding-top-medium">
-          <div class="pro flex padding-left-xsmall">
+          <div class="pro flex js-between padding-left-xsmall">
               <div class="profile-teacher margin-right-small">
                 <h4>John Dube</h4>
                 <p>Mathematics</p>
@@ -206,12 +207,14 @@
           class="width100 height100p flex flex-col a-center padding-top-small"
         >
           <h4
-            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
+            onclick="page(1)"
+            class="btn-attendance grades width100 padding-top-small padding-bottom-small text-center cursor1"
           >
-            <i class="ri-edit-line padding-right-small"></i>Terms
+            <i class="btn-terms ri-edit-line padding-right-small"></i>Terms
           </h4>
           <h4
-            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
+          onclick="page(2)"
+            class="btn-comments grades width100 padding-top-small padding-bottom-small text-center cursor1"
           >
             <i class="ri-edit-line padding-right-small"></i>Comments
           </h4>
