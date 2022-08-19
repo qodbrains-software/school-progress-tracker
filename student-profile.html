@@ -32,10 +32,10 @@
                 class="student-image cursor1 margin-right-small"
               />
               <div>
-                <p class="padding-bottom-xsmall">Name: Justin Terry</p>
-                <p class="padding-bottom-xsmall">Gender: male</p>
-                <p class="padding-bottom-xsmall">Age: 20</p>
-                <p>Class teacher: leila Barker</p>
+                <p class="padding-bottom-xsmall">Justin Terry</p>
+                <p class="padding-bottom-xsmall">male</p>
+                <p class="padding-bottom-xsmall">20 yrs</p>
+                <p>leila Barker</p>
               </div>
             </div>
             <div class="flex flex-col a-end j-end">
@@ -46,8 +46,8 @@
             </div>
           </div>
         </header>
-        <table class="width100 padding-right-small add-clr">
-          <tr class="width100 border">
+        <table class="header-t width100 padding-right-small add-clr">
+          <tr class="width100 ">
             <th class="text-start">Subjects</th>
             <th>Task 1</th>
             <th class="">Task 2</th>
@@ -55,11 +55,12 @@
             <th class="">Task 4</th>
           </tr>
         </table>
-        <main class="flex flex-col scroll add-clr height100p">
-            <div class="">
+        <main class="main-page flex flex-col scroll add-clr height100p">
+          <div class="flex height100p">
+            <div class="performance min-width">
           <table class="table-student width100">
             <tr class="">
-              <td class="subj">English</td>
+              <td class="subject">English</td>
               <td class="text-center">0%</td>
               <td class="text-center">0%</td>
               <td class="text-center">0%</td>
@@ -110,17 +111,17 @@
           </table>
           <div class="dash-aside-bg">
             <div
-              class="flex a-end width77 js-between dash-clr margin-bottom-xxsmall pa"
+              class="flex a-end width90 center-by_margin__auto js-between dash-clr margin-bottom-xxsmall pa"
             >
               <div class="">
-                <p class="margin-left-xsmall">
+                <p class="margin-left-xsmall margin-bottom-xsmall">
                   Student Current Progress Status
                 </p>
               </div>
               <div
                 class="status flex padding-right-small text-center margin-top-small"
               >
-                <div class="flex flex-col a-center margin-right-small">
+                <div class="flex flex-col a-center margin-right-small margin-bottom-xsmall">
                   <p class="red dot dot1 margin-bottom-xxsmall"></p>
                   <p>Bad</p>
                 </div>
@@ -135,15 +136,67 @@
               </div>
             </div>
           </div>
-          <div class="canvas">
-            <canvas class="average" height="135"></canvas>
+          <div class="charts flex js-evenly a-center width100">
+          <div class="bar">
+            <canvas class="average"></canvas>
           </div>
         </div>
-        
-        </main>
-        <div class="flex j-center padding-top-small padding-bottom-large padding-left-medium">
-            <p>Days Absent : <span>4</span></p>
         </div>
+        <div class="comments-page flex flex-col min-width">
+        <div class="comments flex a-star padding-top-medium">
+          <div class="pro flex js-between padding-left-xsmall ">
+              <div class="profile-teacher margin-right-small">
+                <h4 class="">Tyler Pillay</h4>
+                <p>English</p>
+              </div>
+                <img class="comments-image" src="./images/barker.jpg" alt="">
+            </div> 
+            <div class="message margin-left-small padding-small padding-left-xsmall">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ullam possimus sapiente iusto repellendus cumque natus. Perspiciatis maiores repellat numquam dignissimos doloremque 
+                excepturi voluptates asperiores quam quas possimus, cumque inventore!</p>
+              <p class="circle"></p>
+              <div class="flex js-between padding-top-small">
+              <small>09:34</small>
+              <small>18 August 2022</small>
+            </div>
+            </div>         
+        </div>
+        <div class="comments flex a-start padding-top-medium">
+          <div class="pro flex js-between padding-left-xsmall">
+              <div class="profile-teacher margin-right-small">
+                <h4>Anelisa Carter dubeni</h4>
+                <p>Physical</p>
+              </div>
+                <img class="comments-image" src="./images/barker.jpg" alt="">
+            </div> 
+            <div class="message margin-left-small padding-small padding-left-xsmall">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus?</p>
+              <p class="circle"></p>
+              <div class="flex js-between padding-top-small">
+              <small>13:34</small>
+              <small>09 August 2022</small>
+            </div>
+            </div>         
+        </div>
+        <div class="comments flex a-start padding-top-medium">
+          <div class="pro flex js-between padding-left-xsmall">
+              <div class="profile-teacher margin-right-small">
+                <h4>John Dube</h4>
+                <p>Mathematics</p>
+              </div>
+                <img class="comments-image" src="./images/barker.jpg" alt="">
+            </div> 
+            <div class="message margin-left-small padding-small padding-left-xsmall">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus?</p>
+              <p class="circle"></p>
+              <div class="flex js-between padding-top-small">
+              <small>10:34</small>
+              <small>21 July 2022</small>
+            </div>
+            </div>         
+        </div>
+      </div>
+        </main>
       </section>
       <aside class="width15 flex flex-col a-center dash-aside-bg dash-clr">
         <div class="margin-top-medium text-center margin-bottom-small">
@@ -154,12 +207,14 @@
           class="width100 height100p flex flex-col a-center padding-top-small"
         >
           <h4
-            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
+            onclick="page(1)"
+            class="btn-attendance grades width100 padding-top-small padding-bottom-small text-center cursor1"
           >
-            <i class="ri-edit-line padding-right-small"></i>Terms
+            <i class="btn-terms ri-edit-line padding-right-small"></i>Terms
           </h4>
           <h4
-            class="grades width100 padding-top-small padding-bottom-small text-center cursor1"
+          onclick="page(2)"
+            class="btn-comments grades width100 padding-top-small padding-bottom-small text-center cursor1"
           >
             <i class="ri-edit-line padding-right-small"></i>Comments
           </h4>
