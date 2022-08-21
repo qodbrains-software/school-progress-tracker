@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="application/javascript" href="mockdata.js">
     <link rel="stylesheet" href="theme.css" />
     <title>Attendance</title>
   </head>
@@ -38,13 +37,13 @@
           </div>
           <div class="flex js-between padding-top-small">
             <h3>Attendance Section</h3>
-            <h3 class="date">20 April 2022</h3>
+            <h3 class="date"></h3>
           </div>
           <div class="flex js-between padding-top-small">
             <button class="btn cursor1">Task</button>
             <div class="flex">
               <input type="search" class="input" placeholder="Search Student"/>
-              <button class="margin-left-xsmall btn cursor1">Search</button>
+              <button class="margin-left-xsmall btn cursor1 searchButton">Search</button>
             </div>
           </div>
         </header>
@@ -56,67 +55,12 @@
           </tr>
         </table>
         <main class="flex flex-col scroll add-clr height100p">
-          <table class="width100">
-            <tr class="tr">
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" class="checkInput"/></td>
-              <td class="text-center" class="studPro">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
-            <tr>
-              <td>Sonwabile Dubeni</td>
-              <td class="text-center"><input type="checkbox" /></td>
-              <td class="text-center">Student Profile</td>
-            </tr>
+          <table class="width100" id="main-table">
+            <!-- <tr class="child">
+             <td class="td-name"></td>
+             <td class="text-center checkInput"><input type="checkbox"/></td>
+             <td class="text-center studPro"><button class="btn cursor1">Student Profile</button></td>
+            </tr> -->
           </table>
         </main>
         <footer
@@ -127,5 +71,6 @@
       </section>
     </div>
     <script src="attendance.js"></script>
+    <!-- <script src="mockData.js"></script> -->
   </body>
 </html>

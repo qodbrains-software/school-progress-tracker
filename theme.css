@@ -714,6 +714,14 @@ td, th {
   border-radius: 3.5px;
 }
 
+.btn1 {
+  padding: .2rem 2rem;
+  border: none;
+  border-radius: 3.5px;
+  background-color: #0E31EA; 
+  color: #FFFFFF;
+}
+
 .input {
   border: none;
   outline: none;
