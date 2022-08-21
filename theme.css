@@ -727,7 +727,7 @@ tr {
 }
 
 .btn {
-  padding: .2rem 2rem;
+  padding: 0.5rem 2rem;
   border: none;
   border-radius: 3.5px;
 }
@@ -737,6 +737,10 @@ tr {
   outline: none;
   border-radius: 2px;
   padding-left: 5px;
+}
+
+.btn-attendance {
+  background-color: #0E31EA;
 }
 
 .grades {
@@ -815,6 +819,7 @@ tr {
       width: 60%;
     }
 
+    
     .circle {
       position: absolute;
       top: 15px;
@@ -825,11 +830,24 @@ tr {
       border: solid #f3f3f3 1px;
       background-color: white;
     }
-
+    
     .pro {
       width: 12rem;
     }
-
+    
     .comments-page {
       display: none;
+      
     }
+
+    .comments {
+      color: black;
+    }
+    
+    .comments:nth-child(even) {
+      margin-left: 5rem;
+    }
+    
+    .comments:nth-child(even) .message{
+      background-color: #e2f8ff;
+    } 

@@ -26,6 +26,8 @@ const barChart = new Chart(bargraph, bar)
 const performance = document.querySelector(".performance");
 const comments = document.querySelector(".comments-page");
 const headert = document.querySelector(".header-t");
+const terms = document.querySelector(".btn-attendance");
+const comment = document.querySelector(".btn-comments");
 
 
     const page = (page) => {
@@ -34,12 +36,16 @@ const headert = document.querySelector(".header-t");
                 performance.style.display = "block"
                 comments.style.display = "none"
                 headert.style.visibility = "visible"
+                terms.style.backgroundColor = "#0E31EA"
+                comment.style.backgroundColor = "#3C5BFF"
                 
                 break;
             case 2:
                  comments.style.display = "flex"
                  performance.style.display = "none"
                  headert.style.visibility = "hidden"
+                 comment.style.backgroundColor = "#0E31EA"
+                 terms.style.backgroundColor = "#3C5BFF"
                 break;
         }
     };
