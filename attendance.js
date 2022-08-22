@@ -227,8 +227,8 @@ date.textContent = newDate();
 // const td = document.querySelector(".td-name");
 // const checkInput = document.querySelector(".checkInput");
 // const studPro = document.querySelector(".studPro");
+// const searchTable = document.querySelector(".search-table");
 const table = document.querySelector("#main-table");
-const searchTable = document.querySelector(".search-table");
 const input1 = document.querySelector(".input");
 const searchButton = document.querySelector(".searchButton");
 
@@ -236,8 +236,15 @@ let isSearch = false;
 
 const renderList = (list) => {
   if(isSearch) {
+    for (let i = 0;i < table.childNodes.length;i++) {
+        const element = table.childNodes[i];
+        console.log(table.removeChild(element));
+    }
+    // console.log(table.childNodes.length -1);
+    // table.childNodes.forEach((item, index, array) => {
+    //   table.removeChild(item);
+    // })
     // table.style.display = "none";
-
     // searchTable.style.display = "flex";
   }
   list.forEach((items) => {
@@ -275,14 +282,10 @@ renderList(students);
 // ===============================================================================================================
 
 searchButton.addEventListener("click", () => {
-  table.childNodes.forEach((item, index, array) => {
-    table.removeChild(item);
-  })
   isSearch = true;
   filteredList = students.filter((element, index, array) => {
     return element.student_name === input1.value;
   });
-  console.log(filteredList)
   renderList(filteredList);
 });
 
