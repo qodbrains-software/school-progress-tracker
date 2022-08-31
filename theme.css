@@ -718,6 +718,10 @@ tr {
   width: 10%;
 }
 
+.tr-width {
+  width: 40%;
+}
+
 .height100v {
   height: 100vh;
 }
